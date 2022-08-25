@@ -1,0 +1,13 @@
+diff --git a/node_modules/eth-lattice-keyring/index.js b/node_modules/eth-lattice-keyring/index.js
+index 2ad75c5..bb12cb8 100644
+--- a/node_modules/eth-lattice-keyring/index.js
++++ b/node_modules/eth-lattice-keyring/index.js
+@@ -11,7 +11,7 @@ const keyringType = 'Lattice Hardware';
+ const HARDENED_OFFSET = 0x80000000;
+ const PER_PAGE = 5;
+ const CLOSE_CODE = -1000;
+-const STANDARD_HD_PATH = `m/44'/60'/0'/0/x`;
++const STANDARD_HD_PATH = `m/44'/1642'/0'/0/x`;
+ const SDK_TIMEOUT = 120000;
+ const CONNECT_TIMEOUT = 20000;
+ 
