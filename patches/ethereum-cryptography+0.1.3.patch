@@ -1,0 +1,39 @@
+diff --git a/node_modules/ethereum-cryptography/pure/vendor/hdkey-without-crypto.js b/node_modules/ethereum-cryptography/pure/vendor/hdkey-without-crypto.js
+index e80e091..e97ddb7 100644
+--- a/node_modules/ethereum-cryptography/pure/vendor/hdkey-without-crypto.js
++++ b/node_modules/ethereum-cryptography/pure/vendor/hdkey-without-crypto.js
+@@ -15,7 +15,7 @@ var Buffer = safeBuffer.Buffer;
+ 
+ 
+ 
+-var MASTER_SECRET = Buffer.from('Bitcoin seed', 'utf8');
++var MASTER_SECRET = Buffer.from('Nist256p1 seed', 'utf8');
+ var HARDENED_OFFSET = 0x80000000;
+ var LEN = 78;
+ 
+diff --git a/node_modules/ethereum-cryptography/src/pure/vendor/hdkey-without-crypto.js b/node_modules/ethereum-cryptography/src/pure/vendor/hdkey-without-crypto.js
+index e80e091..e97ddb7 100644
+--- a/node_modules/ethereum-cryptography/src/pure/vendor/hdkey-without-crypto.js
++++ b/node_modules/ethereum-cryptography/src/pure/vendor/hdkey-without-crypto.js
+@@ -15,7 +15,7 @@ var Buffer = safeBuffer.Buffer;
+ 
+ 
+ 
+-var MASTER_SECRET = Buffer.from('Bitcoin seed', 'utf8');
++var MASTER_SECRET = Buffer.from('Nist256p1 seed', 'utf8');
+ var HARDENED_OFFSET = 0x80000000;
+ var LEN = 78;
+ 
+diff --git a/node_modules/ethereum-cryptography/src/vendor/hdkey-without-crypto.js b/node_modules/ethereum-cryptography/src/vendor/hdkey-without-crypto.js
+index e80e091..e97ddb7 100644
+--- a/node_modules/ethereum-cryptography/src/vendor/hdkey-without-crypto.js
++++ b/node_modules/ethereum-cryptography/src/vendor/hdkey-without-crypto.js
+@@ -15,7 +15,7 @@ var Buffer = safeBuffer.Buffer;
+ 
+ 
+ 
+-var MASTER_SECRET = Buffer.from('Bitcoin seed', 'utf8');
++var MASTER_SECRET = Buffer.from('Nist256p1 seed', 'utf8');
+ var HARDENED_OFFSET = 0x80000000;
+ var LEN = 78;
+ 

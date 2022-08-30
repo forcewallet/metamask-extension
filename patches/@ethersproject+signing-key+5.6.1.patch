@@ -1,0 +1,42 @@
+diff --git a/node_modules/@ethersproject/signing-key/lib/index.js b/node_modules/@ethersproject/signing-key/lib/index.js
+index 01fb618..70426d9 100644
+--- a/node_modules/@ethersproject/signing-key/lib/index.js
++++ b/node_modules/@ethersproject/signing-key/lib/index.js
+@@ -10,13 +10,13 @@ var logger = new logger_1.Logger(_version_1.version);
+ var _curve = null;
+ function getCurve() {
+     if (!_curve) {
+-        _curve = new elliptic_1.EC("secp256k1");
++        _curve = new elliptic_1.EC("p256");
+     }
+     return _curve;
+ }
+ var SigningKey = /** @class */ (function () {
+     function SigningKey(privateKey) {
+-        (0, properties_1.defineReadOnly)(this, "curve", "secp256k1");
++        (0, properties_1.defineReadOnly)(this, "curve", "p256");
+         (0, properties_1.defineReadOnly)(this, "privateKey", (0, bytes_1.hexlify)(privateKey));
+         if ((0, bytes_1.hexDataLength)(this.privateKey) !== 32) {
+             logger.throwArgumentError("invalid private key", "privateKey", "[[ REDACTED ]]");
+diff --git a/node_modules/@ethersproject/signing-key/src.ts/index.ts b/node_modules/@ethersproject/signing-key/src.ts/index.ts
+index 1452316..d879904 100644
+--- a/node_modules/@ethersproject/signing-key/src.ts/index.ts
++++ b/node_modules/@ethersproject/signing-key/src.ts/index.ts
+@@ -12,7 +12,7 @@ const logger = new Logger(version);
+ let _curve: EC = null
+ function getCurve() {
+     if (!_curve) {
+-        _curve = new EC("secp256k1");
++        _curve = new EC("p256");
+     }
+     return _curve;
+ }
+@@ -30,7 +30,7 @@ export class SigningKey {
+     readonly _isSigningKey: boolean;
+ 
+     constructor(privateKey: BytesLike) {
+-        defineReadOnly(this, "curve", "secp256k1");
++        defineReadOnly(this, "curve", "p256");
+ 
+         defineReadOnly(this, "privateKey", hexlify(privateKey));
+         if (hexDataLength(this.privateKey) !== 32) {
