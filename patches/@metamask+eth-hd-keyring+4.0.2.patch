@@ -1,0 +1,13 @@
+diff --git a/node_modules/@metamask/eth-hd-keyring/index.js b/node_modules/@metamask/eth-hd-keyring/index.js
+index 72a0ca6..ee9473a 100644
+--- a/node_modules/@metamask/eth-hd-keyring/index.js
++++ b/node_modules/@metamask/eth-hd-keyring/index.js
+@@ -4,7 +4,7 @@ const bip39 = require('@metamask/bip39');
+ const { normalize } = require('@metamask/eth-sig-util');
+ 
+ // Options:
+-const hdPathString = `m/44'/60'/0'/0`;
++const hdPathString = `m/44'/1642'/0'/0`;
+ const type = 'HD Key Tree';
+ 
+ class HdKeyring extends SimpleKeyring {
